@@ -1,0 +1,10 @@
+version: '3'
+###docker-compose -f docker-compose.yml up --build
+services:
+  worldofgame-service:
+    build: .
+    image: bga008/worldofgame:v2
+    volumes:
+      - /training/devops/templates/Scores.html:/templates/Scores.html
+    ports:
+      - 5000:5000
