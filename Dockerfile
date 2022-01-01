@@ -5,12 +5,12 @@ WORKDIR /training/devops
 #RUN . venv/bin/activate
 
 # Install dependencies:
-COPY requirements.txt .
-COPY MainScores.py .
-COPY Utils.py .
-COPY scores.txt .
-COPY oldscore.txt .
-COPY templates/Scores.html ./templates/Scores.html
+COPY requirements.txt ./
+COPY MainScores.py ./
+COPY Utils.py ./
+COPY scores.txt ./
+COPY oldscore.txt ./
+ADD templates/Scores.html ./templates/Scores.html/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
