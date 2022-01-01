@@ -1,16 +1,19 @@
-FROM python:3.8-slim-bullseye
+FROM python:3
 
 WORKDIR /training/devops
-RUN python3 -m venv venv
-RUN . venv/bin/activate
+#RUN python3 -m venv venv
+#RUN . venv/bin/activate
 
 # Install dependencies:
-COPY requirements.txt ./
-COPY MainScores.py ./
-COPY Utils.py ./
-COPY scores.txt ./
-COPY templates/Scores.html ./templates/Scores.html
+COPY requirements.txt .
+COPY MainScores.py .
+COPY Utils.py .
+#COPY scores.txt .
+#COPY oldscore.txt .
+#COPY templates/Scores.html ./templates/Scores.html
 
-RUN pip3 install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "python3", "./MainScores.py" , "runserver", "0.0.0.0:5000"]
+EXPOSE 5000
+
+CMD [ "python", "./MainScores.py", "runserver", "0.0.0.0:5000"]

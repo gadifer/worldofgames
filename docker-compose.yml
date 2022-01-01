@@ -3,8 +3,10 @@ version: '3'
 services:
   worldofgame-service:
     build: .
-    image: bga008/worldofgame:v2
+    image: gadifer/wog:v1
     volumes:
-      - /training/devops/templates/Scores.html:/templates/Scores.html
+      - /training/devops/templates/Scores.html:/training/devops/templates/Scores.html
+      - /training/devops/scores.txt:/training/devops/scores.txt
+      - /training/devops/oldscore.txt:/training/devops/oldscore.txt
     ports:
       - 5000:5000
