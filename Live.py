@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/local/bin/python3
 
 def welcome():
     name = input("Pease Enter Your Name: ")

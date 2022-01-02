@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/local/bin/python3
 
 #Scores.html located in subdirectory "templates"
 # run from command line :

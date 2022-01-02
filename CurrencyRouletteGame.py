@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 import random
 import requests
 res = requests.get('https://api.exchangerate-api.com/v4/latest/USD')

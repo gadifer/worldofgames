@@ -1,4 +1,5 @@
-#!/bin/python3
+#!/usr/local/bin/python3
+
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By

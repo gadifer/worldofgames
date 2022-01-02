@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 import random
 
 def generate_number():

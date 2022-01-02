@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import os, time
 
 SCORES_FILE_NAME = "/training/devops/scores.txt"

@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/local/bin/python3
 
 from Utils import SCORES_FILE_NAME, BAD_RETURN_CODE
 import subprocess
