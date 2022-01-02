@@ -10,7 +10,7 @@ COPY MainScores.py ./
 COPY Utils.py ./
 COPY scores.txt ./
 COPY oldscore.txt ./
-ADD Scores.html ./templates/Scores.html/
+COPY Scores.html ./templates/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
